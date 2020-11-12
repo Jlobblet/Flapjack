@@ -7,7 +7,7 @@ on:
 jobs:
         build:
                 env:
-                        PROJECT_NAME: PROJECT_NAME
+                        PROJECT_NAME: Flapjack
 
                 runs-on: ubuntu-latest
 
@@ -18,7 +18,7 @@ jobs:
                 - name: Setup .NET Core
                   uses: actions/setup-dotnet@v1
                   with:
-                          dotnet-version: 3.1.403
+                          dotnet-version: 5.*
                 - name: Install depencencies
                   run: dotnet restore
                 - name: Build Windows
